@@ -4,21 +4,128 @@ body {
 	color: #1d3557;
 	background-color: #f1faee;
 	text-align: center;
-	height: 100vh;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
 	justify-content: center;
+	align-items: center;
+	height: 100vh;
 }
 
 h1 {
 	font-family: 'Abril Fatface', cursive;
-	font-size: 4rem;
+	font-size: 2rem;
 	font-weight: 400;
-	margin: 0;
+	margin-top: 0;
+	margin-bottom: 1rem;
+}
+
+h2 {
+	font-size: 1rem;
+	line-height: 1.4;
+	margin-top: 0;
+	margin-bottom: 1rem;
+	color: #457b9d;
+}
+
+p {
+	margin-top: 0;
+}
+
+a {
+	color: #457b9d;
+}
+
+a:hover,
+a:focus {
+	color: #e63946;
+}
+
+header {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	flex: 1 0 auto;
+	padding-left: 1rem;
+	padding-right: 1rem;
 }
 
 footer {
 	font-size: 1.25rem;
 	color: #457b9d;
+}
+
+footer p {
+	margin-bottom: 0;
+}
+
+svg {
+	display: block;
+	width: 1.5rem;
+	height: 1.5rem;
+}
+
+.container {
+	width: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.list-inline {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.list-inline a {
+	display: block;
+	padding: 0.5rem;
+}
+
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border: 0;
+}
+
+@media (min-width: 768px) {
+	h1 {
+		font-size: 3rem;
+	}
+
+	h2 {
+		font-size: 1.25rem;
+	}
+
+	svg {
+		display: block;
+		width: 1.75rem;
+		height: 1.75rem;
+	}
+}
+
+@media (min-width: 1200px) {
+	h1 {
+		font-size: 3.5rem;
+	}
+
+	h2 {
+		font-size: 1.5rem;
+	}
+
+	svg {
+		display: block;
+		width: 2rem;
+		height: 2rem;
+	}
 }
