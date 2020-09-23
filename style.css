@@ -3,12 +3,6 @@ body {
 	font-weight: 400;
 	color: #1d3557;
 	background-color: #f1faee;
-	text-align: center;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	height: 100vh;
 }
 
 h1 {
@@ -17,14 +11,6 @@ h1 {
 	font-weight: 400;
 	margin-top: 0;
 	margin-bottom: 1rem;
-}
-
-h2 {
-	font-size: 1rem;
-	line-height: 1.4;
-	margin-top: 0;
-	margin-bottom: 1rem;
-	color: #457b9d;
 }
 
 p {
@@ -65,11 +51,22 @@ svg {
 }
 
 .container {
-	width: 100%;
 	padding-right: 15px;
 	padding-left: 15px;
-	margin-right: auto;
-	margin-left: auto;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.lead {
+	font-size: 1rem;
+	line-height: 1.4;
+	margin-top: 0;
+	margin-bottom: 1rem;
+	color: #457b9d;
 }
 
 .list-inline {
@@ -98,12 +95,22 @@ svg {
 	border: 0;
 }
 
+.fade-1 {
+	-webkit-animation: .5s .25s fade backwards ease-out;
+	animation: .5s .25s fade backwards ease-out;
+}
+
+.fade-2 {
+	-webkit-animation: .5s .5s fade backwards ease-out;
+	animation: .5s .5s fade backwards ease-out;
+}
+
 @media (min-width: 768px) {
 	h1 {
 		font-size: 3rem;
 	}
 
-	h2 {
+	.lead {
 		font-size: 1.25rem;
 	}
 
@@ -119,7 +126,7 @@ svg {
 		font-size: 3.5rem;
 	}
 
-	h2 {
+	.lead {
 		font-size: 1.5rem;
 	}
 
@@ -127,5 +134,19 @@ svg {
 		display: block;
 		width: 2rem;
 		height: 2rem;
+	}
+}
+
+@-webkit-keyframes fade {
+	from {
+		transform: translateY(.25em);
+		opacity: 0;
+	}
+}
+
+@keyframes fade {
+	from {
+		transform: translateY(.25em);
+		opacity: 0;
 	}
 }
